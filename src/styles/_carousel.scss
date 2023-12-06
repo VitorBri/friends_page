@@ -1,0 +1,28 @@
+@use 'variaveis';
+.carousel{
+
+    margin-top: 80px;
+
+    &__container{
+        align-items: center;
+        justify-content: space-between;
+
+        .material-symbols-outlined{
+            font-size: 60px;
+        }
+    }
+    
+    &__images{
+        max-width:1024px;
+        border: 3px solid variaveis.$corSecundaria ;
+        border-radius: 15px;
+        overflow: hidden;
+
+    }
+    
+    &__image{
+        width: 100%;
+    }
+    
+}
+

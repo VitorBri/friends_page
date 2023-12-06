@@ -1,0 +1,25 @@
+@use 'variaveis';
+@use 'header';
+@use 'carousel';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: variaveis.$corDeFundo;
+}
+
+.font--cunstom{
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+section{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+

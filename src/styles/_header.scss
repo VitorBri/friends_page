@@ -1,0 +1,36 @@
+@use 'variaveis';
+
+.header{
+    background-color:variaveis.$corPrimaria;
+    border-bottom: 4px solid variaveis.$corSecundaria;
+
+    &__logo{
+        max-width: 200px;
+        width:100%;
+        margin: 5px;
+
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+        margin: 0 auto;
+        align-items: center;
+        
+    }
+
+    &__nav__items{
+        display: flex;
+        margin: 5px;
+    }
+
+    &__nav__item{
+        margin-left: 8px;
+        text-decoration: none;
+        font-size: 18px;
+        color:#fff ;
+        text-transform: uppercase;
+    }
+
+}
