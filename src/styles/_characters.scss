@@ -1,0 +1,84 @@
+@use'variaveis';
+
+.characters{
+    margin-top: 240px;
+    
+    @media screen and (min-width:768px) and  (max-width:1023px) {  
+        padding: 0 20px;
+    }
+
+    @media screen and (max-width:1023px){
+        margin-top: 80px;
+        overflow: hidden;
+
+        .slick-next:before, 
+        .slick-prev:before{
+            display: none;
+        }
+
+    @media screen and (min-width:768px) and  (max-width:1023px) {
+        overflow: hidden;
+
+            .slick-next:before, 
+            .slick-prev:before{
+                display: none;
+        }
+    }    
+
+    }
+
+    &__cards{
+
+        @media screen and (max-width:767px) {
+        }
+        
+
+        .slick-next{
+            right: -30px;
+            top: 45%;
+        }
+        .slick-prev{
+            left: -50px;
+            top: 45%;
+        }
+        
+        .slick-next:before, 
+        .slick-prev:before{
+            
+            color:variaveis.$corPrimaria ;
+            font-size: 40px;
+        }
+        
+    }
+    
+    &__cards{
+        padding: 10px;
+        
+        .slick-list{
+            padding: 15px 60px;
+        }
+        
+        .slick-center {
+            transition: transform 0.3s ease;
+        }
+        .slick-slide {
+            transition: transform 0.3s ease;
+        }
+    }
+    
+    
+    &__card{
+        padding: 20px;
+        img{
+            width: 100%;
+            border-radius: 15px;
+        }
+        
+        h3{
+            padding: 8px;
+            text-align: center;
+        }
+    }
+    
+    
+}

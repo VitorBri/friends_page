@@ -1,9 +1,14 @@
 @use 'variaveis';
 
 .header{
+
     background-color:variaveis.$corPrimaria;
     border-bottom: 4px solid variaveis.$corSecundaria;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
+    
     &__logo{
         max-width: 200px;
         width:100%;
@@ -20,9 +25,18 @@
         
     }
 
-    &__nav__items{
+    &__nav__itens{
         display: flex;
         margin: 5px;
+
+        @media screen and (max-width: 1023px) {
+            background-color:variaveis.$corPrimaria;
+            position: absolute;
+            top: 63.109px;
+            width: 100%;
+            right:-5px;
+            
+        }
     }
 
     &__nav__item{
@@ -31,6 +45,28 @@
         font-size: 18px;
         color:#fff ;
         text-transform: uppercase;
+
+        @media screen and (max-width: 767px){
+            font-size: 14px;
+        }
+
     }
+    &__nav__mobile{
+        display: none;
+        cursor: pointer;
+
+        @media screen and (max-width: 1023px){
+            display: block;
+            
+            .bar{
+                width: 30px;
+                height: 3px;
+                background-color:variaveis.$corDeTexto;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+        }
+        }
+
 
 }

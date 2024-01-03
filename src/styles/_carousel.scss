@@ -1,22 +1,24 @@
 @use 'variaveis';
 .carousel{
+    margin-top: 120px;
 
-    margin-top: 80px;
-
-    &__container{
-        align-items: center;
-        justify-content: space-between;
-
-        .material-symbols-outlined{
-            font-size: 60px;
-        }
+    @media screen and (max-width:1023px){
+        margin-top: 80px;
+        padding: 0 10px;
+    }
+    @media screen and (min-width:768px) and  (max-width:1023px) {  
+        padding: 0 20px;
+    }
+    
+    .slick-list,
+    .slick-track {
+        transition-delay: 10ms;
     }
     
     &__images{
-        max-width:1024px;
-        border: 3px solid variaveis.$corSecundaria ;
         border-radius: 15px;
         overflow: hidden;
+        
 
     }
     

@@ -1,6 +1,11 @@
 @use 'variaveis';
 @use 'header';
 @use 'carousel';
+@use 'sinopse';
+@use 'characters';
+@use 'curiosidades';
+@use 'assistir';
+@use 'footer';
 
 *{
     margin: 0;
@@ -19,7 +24,40 @@ body{
 }
 
 section{
-    max-width: 1080px;
+    max-width: 1024px;
     margin: 0 auto;
+}
+
+.title{
+    padding-top: 20px;
+    color:variaveis.$corPrimaria;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: 'Anek Telugu', sans-serif;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.title--small{
+    color:variaveis.$corTerciaria;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+.section-text{
+    line-height: 1.5;
+    color:variaveis.$corDeTexto ;
+    font-size: 20px;
+    @media screen and (max-width:767px){
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+    @media screen and (min-width:768px) and  (max-width:1023px) {  
+        font-size: 18px;
+        padding: 20px 20px;   
+    }
+
+    
 }
 

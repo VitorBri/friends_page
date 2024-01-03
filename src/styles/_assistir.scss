@@ -1,0 +1,58 @@
+@use'variaveis';
+
+.assistir{
+    margin-top: 240px;
+    padding:40px  0;
+
+    @media screen and (max-width:1023px){
+        margin-top: 170px;
+        padding: 0 10px;
+    }
+    @media screen and (min-width:768px) and  (max-width:1023px) {  
+        padding: 0 20px;
+    }
+
+    &__container{
+        display: flex;
+        background-image:url(../images/image_assitir.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 600px;
+        border-radius: 15px;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+
+        @media screen and (max-width:767px){
+            max-width: 100%;
+        }
+
+        .button{
+            position: absolute;
+            bottom: 60px;
+            width: 300px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: variaveis.$corPrimaria;
+            color: #fff;
+            padding: 12px;
+            border-radius: 5px;
+
+            @media screen and (max-width:767px){
+                width: 150px;
+            }
+
+            &:hover{
+                background-color:#6139be;
+            }
+        }
+
+    }
+}
