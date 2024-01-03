@@ -9,6 +9,7 @@
     }
     @media screen and (min-width:768px) and  (max-width:1023px) {  
         padding: 0 20px;
+        text-align: center;
     }
     
     
@@ -16,11 +17,7 @@
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 25px;
-
-        @media screen and (max-width:1023px) {
-            display: block;
-        }
-
+        
         img{
             width: 100%;
             border-radius: 15px;
@@ -28,6 +25,14 @@
         }
         p{
             margin: 10px 0 ;
+        }
+
+        @media screen and (max-width:1023px) {
+            display: block;
+            
+        }
+        @media screen and (min-width:768px) and  (max-width:1023px) {  
+            margin: 5%;
         }
 
     }

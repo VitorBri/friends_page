@@ -16,8 +16,18 @@
             width: 100%;
             border-radius: 15px;
         }
+
+
         @media screen and (max-width:1023px) {
             display: block;
+        }
+
+        @media screen and (min-width:768px) and  (max-width:1023px) {  
+            img{
+                width: 40%;
+                float: left;
+                margin: 20px 20px 0 20px;
+            }
         }
     }
 

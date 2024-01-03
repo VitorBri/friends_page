@@ -36,7 +36,7 @@ $(document).ready(function(){
     function responsiveResolu () {
         var screenWidth = $(window).width();
         
-        if (screenWidth <= 1023) {
+        if (screenWidth <= 767) {
 
             $('.characters__cards').off('beforeChange');
             $('.characters__cards').off('afterChange');
@@ -44,7 +44,21 @@ $(document).ready(function(){
             
             $('.header__nav__itens').hide();
 
-        } else {
+        }
+        else if (screenWidth > 767 && screenWidth < 1023 ) {
+            $('.characters__cards').on('init beforeChange', function(event, slick, currentSlide, nextSlide){
+                $('.slick-center').css('transform', 'scale(1)');
+            });
+            
+            $('.characters__cards').on('afterChange', function(event, slick, currentSlide){
+                $('.slick-center').css('transform', 'scale(1.2)');
+            });
+
+            $('.slick-center').css('transform', 'scale(1.2)');
+            
+            $('.header__nav__itens').hide();
+        }
+        else {
 
             $('.characters__cards').on('init beforeChange', function(event, slick, currentSlide, nextSlide){
                 $('.slick-center').css('transform', 'scale(1)');
