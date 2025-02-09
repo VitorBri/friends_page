@@ -25,8 +25,7 @@ Este projeto é um site temático sobre a série "Friends". Ele inclui informaç
 ### 1. Clonar o Repositório
 Para obter uma cópia do projeto, execute:
 ```sh
-git clone https://github.com/VitorBri/page-friends.git
-cd page-friends
+git clone https://github.com/VitorBri/friends_page.git
 ```
 
 ### 2. Instalar Dependências
