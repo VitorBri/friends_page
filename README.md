@@ -1,4 +1,4 @@
-# Projeto Friends
+# Page Friends
 
 ## Descrição
 Este projeto é um site temático sobre a série "Friends". Ele inclui informações sobre a série, personagens, curiosidades e um link para assistir aos episódios. O site utiliza Gulp para compilação de arquivos SCSS, otimização de imagens e minificação de scripts.
